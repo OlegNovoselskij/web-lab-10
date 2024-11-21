@@ -1,0 +1,30 @@
+.catalog-container {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.tiles-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+
+.view-more-button {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+    border: none;
+    font-size: 0.9rem;
+    transition: background-color 0.3s;
+    margin-left: 440px;
+    margin-top: 40px;
+}
+
+.view-more-button:hover {
+    background-color: #333;
+}

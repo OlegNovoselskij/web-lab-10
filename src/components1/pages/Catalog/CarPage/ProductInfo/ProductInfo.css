@@ -1,0 +1,81 @@
+.product-card {
+  display: flex;
+  width: 1000px;
+  margin: auto;
+  padding: 16px;
+}
+
+.image-preview {
+  position: relative;
+  width: 50%;
+  padding-right: 16px;
+  margin-right: 20px;
+}
+
+.image-preview img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.product-details {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product-details h2 {
+  font-size: 54px;
+  margin: 0 0 8px;
+}
+
+.product-details p {
+  font-size: 24px;
+  color: #666;
+  margin-bottom: 16px;
+}
+
+.input-fields {
+  display: flex;
+  gap: 36px;
+  margin-bottom: 16px;
+}
+
+.input-field label {
+  font-size: 22px;
+  color: #333;
+  margin-bottom: 4px;
+}
+
+.input-field input,
+.input-field select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.price {
+  font-size: 38px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+}
+
+.btn-back,
+.btn-add {
+  padding: 10px 16px;
+  border-radius: 4px;
+  border: 1px solid #333;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.btn-add {
+  background-color: #333;
+  color: #fff;
+}

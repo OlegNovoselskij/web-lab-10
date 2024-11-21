@@ -1,0 +1,25 @@
+.header-section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-left: 100px;
+    margin-top: 10px;
+}
+
+.header-section img {
+    width: 200px;
+    height: 200px;
+}
+
+.header-text {
+    max-width: 600px;
+}
+
+.header-text h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.header-text p {
+    color: #666;
+}

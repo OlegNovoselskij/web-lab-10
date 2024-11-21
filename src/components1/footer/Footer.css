@@ -1,0 +1,62 @@
+.footer {
+  padding: 0px;
+  text-align: center;
+  margin-top: -10px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.branding {
+  width: 650px;
+}
+
+.branding h3 {
+  margin: 0;
+  font-weight: bold;
+}
+
+.branding p {
+  margin: 5px 0 0 0;
+  color: #555;
+}
+
+.logo {
+  font-weight: bold;
+  padding: 20px;
+  margin-right: 280px;
+  height: 50px;
+}
+
+.logo img {
+  width: 100px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+  margin-right: 100px;
+}
+
+.icon {
+  font-size: 20px;
+  color: #555;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.icon:hover {
+  color: #000;
+}
+
+hr {
+  margin: 20px 0;
+}
+
+.copyright {
+  font-size: 14px;
+  color: #888;
+}

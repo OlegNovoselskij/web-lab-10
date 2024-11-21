@@ -1,0 +1,31 @@
+.filters {
+  display: flex;
+  gap: 10px; /* Adjust spacing between dropdowns */
+  align-items: center;
+  margin-left: -300px;
+}
+
+select {
+  padding: 8px 22px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  font-size: large;
+  margin-right: 50px;
+}
+
+button {
+  font-size: x-large;
+  padding: 8px 16px;
+  border: 1px solid #000;
+  border-radius: 8px;
+  margin-left: 20px; /* Adjust spacing between filters and the Apply button */
+}
+
+.filters_button{
+  display: flex;
+  justify-content: space-between;
+  width: 1300px;
+  margin-top: 25px;
+}
+
+
