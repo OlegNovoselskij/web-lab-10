@@ -29,22 +29,6 @@ app.use(cors({
     credentials: true
 }));
 
-// Функція для отримання даних з таблиці cars
-function getCars(maxPrice) {
-    // Перевіряємо, чи передане значення maxPrice є дійсним числом
-    if (typeof maxPrice !== 'number' || !isFinite(maxPrice)) {
-        maxPrice = Number.MAX_SAFE_INTEGER; // Максимальне безпечне значення, якщо maxPrice некоректне
-    }
-    const query = 'SELECT * FROM cars WHERE price <= ?';
-    db.execute(query, [maxPrice], (err, results) => {
-        if (err) {
-            console.error('Помилка виконання запиту:', err);
-            return;
-        }
-        console.log('Результати запиту:', results);
-    });
-}
-
 // Маршрут з фільтрами
 app.get('/api/cars', (req, res) => {
     const { search, maxPrice } = req.query;
