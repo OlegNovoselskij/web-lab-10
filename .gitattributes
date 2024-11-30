@@ -1,0 +1,10 @@
+# Встановлює автоматичну нормалізацію закінчень рядків
+* text=auto
+
+# Примусово використовувати LF для файлів JavaScript та JSON
+*.js text eol=lf
+*.json text eol=lf
+*.sh text eol=lf
+
+# Інші текстові файли
+*.txt text eol=lf

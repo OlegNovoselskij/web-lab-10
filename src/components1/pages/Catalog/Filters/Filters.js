@@ -24,7 +24,7 @@ function Filters({ onClick }) {
                 </select>
             </div>
             <div>
-                <button onClick={handleApplyClick}>Apply</button>
+                <button style={{position:'absolute', marginLeft:'10px'}} onClick={handleApplyClick}>Apply</button>
             </div>
         </div>
     );

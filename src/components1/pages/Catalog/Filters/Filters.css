@@ -2,7 +2,7 @@
   display: flex;
   gap: 10px; /* Adjust spacing between dropdowns */
   align-items: center;
-  margin-left: -300px;
+  margin-left: -200px;
 }
 
 select {
@@ -18,7 +18,7 @@ button {
   padding: 8px 16px;
   border: 1px solid #000;
   border-radius: 8px;
-  margin-left: 20px; /* Adjust spacing between filters and the Apply button */
+  margin-left: 0px; /* Adjust spacing between filters and the Apply button */
 }
 
 .filters_button{

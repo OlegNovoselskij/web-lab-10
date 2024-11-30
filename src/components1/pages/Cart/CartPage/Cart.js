@@ -3,6 +3,7 @@ import React from 'react';
 import './Cart.css';
 import { useSelector, useDispatch } from 'react-redux';
 import { increaseQuantity, decreaseQuantity, removeFromCart } from '../Actions/Actions';
+import { Link } from 'react-router-dom';
 
 const ShoppingCart = () => {
   const items = useSelector((state) => state.items);
@@ -48,6 +49,10 @@ const ShoppingCart = () => {
       </div>
       <div className="cart-total">
         Total amount: <span>${totalAmount}</span>
+      </div>
+      <div className='next-back'>
+        <Link to={'catalog'}>Go back</Link>
+        <Link to={'./Chekout'} >Continue</Link>
       </div>
     </div>
   );

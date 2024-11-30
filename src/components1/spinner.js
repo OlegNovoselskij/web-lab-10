@@ -16,13 +16,22 @@ const styles = {
         height: '100vh',
     },
     spinner: {
-        border: '8px solid #f3f3f3', /* Light gray */
-        borderTop: '8px solid #3498db', /* Blue */
+        width: '60px',
+        height: '60px',
+        border: '6px solid rgba(0, 0, 0, 0.1)', // Напівпрозорий бордюр
+        borderTop: '6px solid #4CAF50', // Яскравий зелений акцент
         borderRadius: '50%',
-        width: '50px',
-        height: '50px',
-        animation: 'spin 2s linear infinite',
+        animation: 'spin 1s ease-in-out infinite', // Анімація
     },
 };
+
+// Додаємо стилі для анімації через @keyframes
+const spinnerStyle = document.createElement('style');
+spinnerStyle.innerHTML = `
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}`;
+document.head.appendChild(spinnerStyle);
 
 export default Spinner;

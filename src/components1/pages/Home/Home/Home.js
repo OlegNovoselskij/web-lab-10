@@ -12,7 +12,7 @@ function Home() {
     };
 
     return (
-        <div style={{ padding: '20px', maxWidth: '1500px', marginLeft: '200px' }}>
+        <div style={{ padding: '20px', maxWidth: '1300px', marginLeft: '50px' }}>
             <HeaderSection />
             <CarDataProvider>
                 {(cars) => (

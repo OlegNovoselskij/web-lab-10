@@ -1,32 +1,30 @@
 import React, { useState, useEffect } from 'react';
-import Spinner from './spinner'; // Import the Spinner component
+import Spinner from './spinner';
+import axios from 'axios';
 
 const CarDataProvider = ({ children }) => {
-    const [cars, setCars] = useState([]);
-    const [loading, setLoading] = useState(true);
-    const [error, setError] = useState(null);
+    const [cars, setCars] = useState([]); 
+    const [loading, setLoading] = useState(true); 
 
     useEffect(() => {
-        const fetchCars = async () => {
+        const fetchCarData = async () => {
             try {
-                const response = await fetch('http://localhost:5000/api/cars');
-                if (!response.ok) throw new Error("Помилка під час отримання даних.");
-                
-                const data = await response.json();
-                setCars(data);
+                const response = await axios.get('http://localhost:5001/api/cars'); 
+                setCars(response.data); 
             } catch (error) {
-                console.error('Помилка отримання даних:', error);
-                setError(error.message);
+                console.error("Error fetching car data:", error);
             } finally {
-                setLoading(false);
+                setLoading(false); 
             }
         };
 
-        fetchCars();
-    }, []);
+        fetchCarData(); 
+    }, []); 
 
-    if (loading) return <Spinner />; // Show spinner while loading
-    if (error) return <div>Помилка: {error}</div>;
+
+    if (loading) {
+        return <Spinner />;
+    }
 
     return children(cars);
 };

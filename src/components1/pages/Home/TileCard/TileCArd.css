@@ -19,9 +19,9 @@
 }
 
 .tile-card img {
-  width: 100%;
+  width: 300px;
   max-width: 280px;
-  height: auto;
+  height: 200px;
   border-radius: 8px;
   margin-bottom: 8px;
 }
